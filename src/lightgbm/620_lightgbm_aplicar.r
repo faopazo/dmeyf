@@ -5,7 +5,7 @@ gc()             #garbage collection
 require("data.table")
 require("lightgbm")
 
-setwd("~/buckets/b1/")
+setwd("C:/Users/fopazo/Documents/R/MAESTRIA/dmeyf_2021")
 
 #cargo el dataset donde voy a entrenar
 dataset  <- fread("./datasetsOri/paquete_premium_202009.csv")
@@ -53,6 +53,6 @@ entrega  <- as.data.table( list( "numero_de_cliente"= dapply[  , numero_de_clien
                                  "Predicted"= prediccion > param_buenos$prob_corte)  ) #genero la salida
 
 #genero el archivo para Kaggle
-fwrite( entrega, 
-        file= "./kaggle/lgb_aplicar_101.csv", 
-        sep= "," )
+#fwrite( entrega, 
+ #       file= "./kaggle/lgb_aplicar_101.csv", 
+  #      sep= "," )

@@ -77,7 +77,8 @@ gc(verbose = FALSE)
 library( "data.table")
 library("ggplot2")
 
-carpeta_datasetsOri <-  "../../../datasetsOri/"
+setwd("C:/Users/fopazo/Documents/R/MAESTRIA/dmeyf_2021")
+carpeta_datasetsOri <-  "C:/Users/fopazo/Documents/R/MAESTRIA/dmeyf_2021/datasetsOri"
 septiembre <- "paquete_premium_202009.csv"
 
 ds <- fread(paste0(carpeta_datasetsOri, septiembre,collapse = ""), header=TRUE, showProgress = FALSE)
